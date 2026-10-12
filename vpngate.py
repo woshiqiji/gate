@@ -51,7 +51,7 @@ VPNGATE_MIRROR = os.environ.get(
     "https://raw.githubusercontent.com/fdciabdul/Vpngate-Scraper-API/main/json/data.json",
 )
 # 已部署的 Cloudflare Worker 检测接口 (GET /check?proxyip=host:port, 实测确认)
-WORKER_CHECK_URL = os.environ.get("CHECK_WORKER", "https://check.helei.kdns.fr/check?sstp=vpn:vpn@")
+WORKER_CHECK_URL = os.environ.get("CHECK_WORKER", "https://qwe123-3ym.pages.dev/check?sstp=vpn:vpn@")
 CONCURRENCY = max(1, int(os.environ.get("CHECK_CONCURRENCY", "32")))   # 与 Worker 网页端一致的并发模型
 CHECK_TIMEOUT = float(os.environ.get("CHECK_TIMEOUT", "90"))          # 单请求客户端超时 (秒)
 MAX_CHECK_NODES = int(os.environ.get("MAX_CHECK_NODES", "0"))         # 0=不限; 本地测试可设小值
@@ -460,8 +460,8 @@ EDGE_HOSTS = [
     h.strip()
     for h in os.environ.get(
         "EDGE_HOSTS",
-        "saas.072159.xyz:443,hzytjy.cn:443,ali.nonull.pp.ua:443,auto.dolby.dpdns.org:443,"
-        "cdn.cnno.de:443,saas.sin.fan:443,cf.777791.xyz:443",
+        "www.botafogo.com.br:443,icook.tw:443,cfip.1323123.xyz:443,assets.bizclikmedia.net:443,uptimerobot.com:443,codexradar.com:443,moondroplab.com:443,cdnjs.loli.net:443,www.petronaftco.com:443,cdn.ddeed.de:443,zen-browser.app:443,www.redboxtools.com:443,hentaiverse.org:443,www.ventusky.com:443,dx.doi.org:443,worldvectorlogo.com:443,www.whatismyip.com:443,dogechain.info:443,",
+        "www.speedtest.net:443,www.npmjs.com:443,my.vultr.com:443,jobsdb.com:443,tinyurl.com:443,cf.xreak.top:443,47bt.com:443,images.chesscomfiles.com:443,cozylife.app:443,constitution.congress.gov:443,www.4429.com.cn:443,registry.yarnpkg.com:443,p.etime.vip:443,fbi.gov:443,packtpub.com:443,cf.468123.xyz:443,gitlab.com:443,www.moc.gov.tw:443,www.owlgraphic.com:443,",
     ).split(",")
     if h.strip()
 ]
@@ -522,8 +522,8 @@ def build_hosts_text(data):
 
 
 # edgetunnel 完整订阅 (vless://) 配置
-EDT_UUID = os.environ.get("EDT_UUID", "90c14586-42a5-4c30-959d-8b36608d67f7")
-EDT_DOMAIN = os.environ.get("EDT_DOMAIN", "ed.xiaolei.qzz.io")
+EDT_UUID = os.environ.get("EDT_UUID", "54b6ff7b-b996-48d9-9660-439372f2e31b")
+EDT_DOMAIN = os.environ.get("EDT_DOMAIN", "zxc23-bc8.pages.dev")
 EDT_FINGERPRINT = os.environ.get("EDT_FINGERPRINT", "chrome")
 SUB_URL = os.environ.get("SUB_URL", "https://jerylihub.github.io/gate/sub.txt")
 

@@ -460,8 +460,8 @@ EDGE_HOSTS = [
     h.strip()
     for h in os.environ.get(
         "EDGE_HOSTS",
-        "www.botafogo.com.br:443,icook.tw:443,cfip.1323123.xyz:443,assets.bizclikmedia.net:443,uptimerobot.com:443,codexradar.com:443,moondroplab.com:443,cdnjs.loli.net:443,www.petronaftco.com:443,cdn.ddeed.de:443,zen-browser.app:443,www.redboxtools.com:443,hentaiverse.org:443,www.ventusky.com:443,dx.doi.org:443,worldvectorlogo.com:443,www.whatismyip.com:443,dogechain.info:443,"
-        "www.speedtest.net:443,www.npmjs.com:443,my.vultr.com:443,jobsdb.com:443,tinyurl.com:443,cf.xreak.top:443,47bt.com:443,images.chesscomfiles.com:443,cozylife.app:443,constitution.congress.gov:443,www.4429.com.cn:443,registry.yarnpkg.com:443,p.etime.vip:443,fbi.gov:443,packtpub.com:443,cf.468123.xyz:443,gitlab.com:443,www.moc.gov.tw:443,www.owlgraphic.com:443",
+        "cf.468123.xyz:2083,crinacle.com:443,www.timbuktutravel.com:2096,ex.warspite.dpdns.org:2087,aimagazine.com:443,packtpub.com:2087,dongbanghong.com:2087,dianomi.com:8443,markmonitor.com:2096,cf.777791.xyz:2053,"
+        "ping.pe:443",
     ).split(",")
     if h.strip()
 ]
